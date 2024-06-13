@@ -1,41 +1,39 @@
-# gakuen-imas-localify
+# Gakumas-Localify-EN
 
-- 学园偶像大师 本地化插件
-- **开发中**
+- Gakuen iDOLM@STER Localization Module
+- An English version of [gakuen-imas-localify](https://github.com/chinosk6/gakuen-imas-localify)
+- **Will be taken down when a proper one were made.**
 
+# Usage
 
+- This is an Xposed Module.
+- For Magisk users use [LSPosed](https://github.com/LSPosed/LSPosed).
+- For Non-Root users use [LSPatch](https://github.com/LSPosed/LSPatch).
 
-# How to use
+- Enable `Force Update Resource`
 
-- 这是一个 XPosed 插件，已 Root 用户可以使用 [LSPosed](https://github.com/LSPosed/LSPosed)，未 Root 用户可以使用 [LSPatch](https://github.com/LSPosed/LSPatch)。
+# Download
+You can download the latest build from the GitHub Actions artifacts.
 
+1. Go to the [GitHub Actions](https://github.com/NatsumeLS/Gakumas-Localify-EN/actions) page.
+2. Find the most recent workflow run.
+3. Click on the workflow run to view details.
+4. In the "Artifacts" section at the bottom of the page, download the `GakumasLocalify` artifact.
 
+# Localization
+[Gakumas-Translation-Data-EN](https://github.com/NatsumeLS/Gakumas-Translation-Data-EN)
 
-# TODO
+- Localization files are placed in `/app/src/main/assets/gakumas-local`
+- `local-files/localization.json` is for Localization translation.
+- `local-files/generic.json` is for translation of parts not covered by Localization.
+- All `.json` files in the `local-files/genericTrans` folder function the same as `generic.json`. Folder and file names can be customized to to distinguish translation content.
+- The `local-files/resource` folder stores resource files. Currently, all txt files with the same name can be replaced.
+- To obtain the original game resources, Check [gkmasToolkit](https://github.com/kishidanatsumi/gkmasToolkit)
 
-- [x] 卡片信息、TIPS 等部分的文本 hook (`generic`)
-- [ ] 更多类型的文件替换
-- [ ] LSPatch 集成模式无效
+# Special Thanks
 
-... and more
-
-
-
-# 本地化相关
-
-- 本地化文件放在 `app/src/main/assets/gakumas-local` 内
-- `version.txt` 记录翻译版本号。每次插件启动都会检查 `asset` 内的版本和本地的版本是否一致。不一致会覆盖文件到 `/data/data/com.bandainamcoent.idolmaster_gakuen/files/gakumas-lical/` 文件夹内
-- `local-files/localization.json` 为 localization 翻译
-- `local-files/generic.json` 为 localization 未覆盖部分的翻译
-- `local-files/genericTrans` 文件夹内所有 `.json` 文件作用同 `generic.json`，文件夹名/文件名可自定义，方便区分翻译内容
-- `local-files/resource` 文件夹存放资源文件，目前可以替换所有同名的 txt 文件。获取游戏原始资源可以查看：[gkmasToolkit](https://github.com/kishidanatsumi/gkmasToolkit)
-
-
-
-# 特别鸣谢
-
+- [gakuen-imas-localify](https://github.com/chinosk6/gakuen-imas-localify)
+- [GakumasTranslationData](https://github.com/chinosk6/GakumasTranslationData)
 - [gkmasToolkit](https://github.com/kishidanatsumi/gkmasToolkit)
 - [UmaPyogin-Android](https://github.com/akemimadoka/UmaPyogin-Android)
 - [UnityResolve.hpp](https://github.com/issuimo/UnityResolve.hpp)
-- You
-
