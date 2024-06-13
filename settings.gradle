@@ -15,5 +15,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Gakumas Localify"
+rootProject.name = "Gakumas Localify EN"
 include ':app'

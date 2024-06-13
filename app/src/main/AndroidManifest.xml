@@ -17,7 +17,7 @@
             android:value="true" />
         <meta-data
             android:name="xposeddescription"
-            android:value="IDOLM@STER Gakuen localify" />
+            android:value="IDOLM@STER Gakuen localify EN" />
         <meta-data
             android:name="xposedminversion"
             android:value="53" />
