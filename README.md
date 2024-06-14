@@ -9,8 +9,6 @@
 - For Magisk users use [LSPosed](https://github.com/LSPosed/LSPosed).
 - For Non-Root users use [LSPatch](https://github.com/LSPosed/LSPatch).
 
-- Enable `Force Update Resource`
-
 # Download
 
 You can download the latest build from the GitHub Actions artifacts.
