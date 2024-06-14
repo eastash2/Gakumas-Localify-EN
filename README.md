@@ -30,6 +30,12 @@ You can download the latest build from the GitHub Actions artifacts.
 - The `local-files/resource` folder stores resource files. Currently, all txt files with the same name can be replaced.
 - To obtain the original game resources, Check [gkmasToolkit](https://github.com/kishidanatsumi/gkmasToolkit)
 
+# Translation Contributors
+
+<a href="https://github.com/NatsumeLS/Gakumas-Translation-Data-EN">
+  <img src="https://contrib.rocks/image?repo=NatsumeLS/Gakumas-Translation-Data-EN" />
+</a>
+
 # Special Thanks
 
 - [gakuen-imas-localify](https://github.com/chinosk6/gakuen-imas-localify)
