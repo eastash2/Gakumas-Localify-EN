@@ -26,7 +26,7 @@ You can download the latest build from the GitHub Actions artifacts.
 
 # Contributors
 
-<a href="https://github.com/NatsumeLS/Gakumas-Localify-EN">
+<a href="https://github.com/NatsumeLS/Gakumas-Localify-EN/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=NatsumeLS/Gakumas-Localify-EN" />
 </a>
 
