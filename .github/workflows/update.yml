@@ -26,7 +26,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.PAT }}
       - name: Commit changes
         run: |
-          git commit -am "Update submodule to latest commit"
+          git commit -am "Update Translation Data to latest commit"
           git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.PAT }}
