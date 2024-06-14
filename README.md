@@ -2,7 +2,6 @@
 
 - Gakuen iDOLM@STER Localization Module
 - An English version of [gakuen-imas-localify](https://github.com/chinosk6/gakuen-imas-localify)
-- **Will be taken down when a proper one were made.**
 
 # Usage
 
