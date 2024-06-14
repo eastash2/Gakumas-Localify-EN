@@ -12,6 +12,7 @@
 - Enable `Force Update Resource`
 
 # Download
+
 You can download the latest build from the GitHub Actions artifacts.
 
 1. Go to the [GitHub Actions](https://github.com/NatsumeLS/Gakumas-Localify-EN/actions) page.
@@ -20,19 +21,15 @@ You can download the latest build from the GitHub Actions artifacts.
 4. In the "Artifacts" section at the bottom of the page, download the `GakumasLocalify` artifact.
 
 # Localization
+
 [Gakumas-Translation-Data-EN](https://github.com/NatsumeLS/Gakumas-Translation-Data-EN)
 
 - Localization files are placed in `/app/src/main/assets/gakumas-local`
-- `local-files/localization.json` is for Localization translation.
-- `local-files/generic.json` is for translation of parts not covered by Localization.
-- All `.json` files in the `local-files/genericTrans` folder function the same as `generic.json`. Folder and file names can be customized to to distinguish translation content.
-- The `local-files/resource` folder stores resource files. Currently, all txt files with the same name can be replaced.
-- To obtain the original game resources, Check [gkmasToolkit](https://github.com/kishidanatsumi/gkmasToolkit)
 
-# Translation Contributors
+# Contributors
 
-<a href="https://github.com/NatsumeLS/Gakumas-Translation-Data-EN">
-  <img src="https://contrib.rocks/image?repo=NatsumeLS/Gakumas-Translation-Data-EN" />
+<a href="https://github.com/NatsumeLS/Gakumas-Localify-EN">
+  <img src="https://contrib.rocks/image?repo=NatsumeLS/Gakumas-Localify-EN" />
 </a>
 
 # Special Thanks
