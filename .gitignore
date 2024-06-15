@@ -15,4 +15,7 @@
 local.properties
 /.idea
 /.vs
-/app
+/app/.cxx
+/app/build
+/app/debug
+/app/release
