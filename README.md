@@ -1,10 +1,15 @@
+[![](https://github.com/NatsumeLS/Gakumas-Localify-EN/actions/workflows/build.yml/badge.svg)](https://github.com/NatsumeLS/Gakumas-Localify-EN/actions/workflows/build.yml)
+[![](https://hits.dwyl.com/NatsumeLS/Gakumas-Localify-EN.svg?style=flat-square)](https://github.com/NatsumeLS/Gakumas-Localify-EN/graphs/traffic)
+
+[![](https://dcbadge.limes.pink/api/server/https://discord.gg/qARc4Hdc3n)](https://natsume.io/GakumasLocalize)
+
 <img align="center" src=/Images/logo.png>
 
 
 This is a *Gakuen iDOLM@STER* Localization Module.
 It accomplishes this by modifying the localization file and Unity assets, aided additionally with the help of a modified version of [gakuen-imas-localify] made to support english translations.
 
-This is based on the [Android] version of the game.  
+This is based on the [Android] version of the game.
 
 # Previews
 
@@ -51,7 +56,7 @@ No maintainer nor contributor will be responsible for any issues encountered as 
 
 You can download the latest build from the GitHub Actions artifacts.
 
-1. Go to the [GitHub Actions](https://github.com/NatsumeLS/Gakumas-Localify-EN/actions) page.
+1. Go to the [GitHub Actions](https://github.com/NatsumeLS/Gakumas-Localify-EN/actions/workflows/build.yml) page.
 2. Find the most recent workflow run.
 3. Click on the workflow run to view details.
 4. In the "Artifacts" section at the bottom of the page, download the `GakumasLocalify` artifact.
