@@ -5,12 +5,15 @@
 
 <img align="center" src=/Images/logo.png>
 
+A Xposed Module for Localizing *Gakuen iDOLM@STER* to English.
 
-This is a *Gakuen iDOLM@STER* Localization Module.
-It accomplishes this by modifying the localization file and Unity assets, aided additionally with the help of a modified version of [gakuen-imas-localify] made to support english translations.
+It works by hooking into the game's text rendering system and replacing text during runtime.
 
-This is based on the [Android] version of the game.
+This project includes a modified version of [gakuen-imas-localify](https://github.com/chinosk6/gakuen-imas-localify).
 
+It is compatible only with the *Android* version of the game.
+
+<!--
 # Previews
 
 <img align="center" src=/Images/preview.png>
@@ -20,9 +23,12 @@ This is based on the [Android] version of the game.
 # Video Preview
 
 </div>
+-->
 
 # Features
-- UI translation
+
+Translations
+- UI
 - Produce Mode
 - Idol & Support cards
 - Idol Bond Commus
@@ -31,24 +37,27 @@ This is based on the [Android] version of the game.
 - Lyrics
 
 # Disclaimer
-Gakumas-Localify-EN is not affiliated with Bandai Namco and is purely a fan-community effort.  
-Assets are edited only for the purpose of translation and it is *the maintainer's belief* this is harmless and unlikely to be an issue.  
-Nonetheless such edits are of course against the relevant TOS so **proceed at your own risk**!  
-No maintainer nor contributor will be responsible for any issues encountered as a result of use.
+*Gakumas-Localify-EN* is an independent fan-community project and is not affiliated with Bandai Namco.
 
----
+Assets are modified solely for translation purposes, and **the maintainers believe this is harmless and unlikely to cause any issues.**
 
-# Progress
+However, these modifications do violate the relevant Terms of Service, so **proceed at your own risk.**
 
-[A more detailed translation progress can be seen here](https://docs.google.com/spreadsheets/d/101wE-LjNJL-lSzZB96ifQAj3X-WmmA1ZIXKFTFRFJGY/edit?usp=sharing)
+**Neither the maintainers nor the contributors will be responsible for any issues that may arise from using this project.**
+
+# Translation Progress
+
+[Detailed Translation Progress](https://docs.google.com/spreadsheets/d/101wE-LjNJL-lSzZB96ifQAj3X-WmmA1ZIXKFTFRFJGY)
+
 [![Link](https://docs.google.com/spreadsheets/d/e/2PACX-1vQctXxwDqkSCNkFs_Ipgh4W0g4Z8dBoyTvJISN16lf7m-huOnfngVtnnNXmRe52oBp0sTtfxapFHN4y/pubchart?oid=847311911&format=image)](https://docs.google.com/spreadsheets/d/101wE-LjNJL-lSzZB96ifQAj3X-WmmA1ZIXKFTFRFJGY/edit?usp=sharing)
 [![Link](https://docs.google.com/spreadsheets/d/e/2PACX-1vQctXxwDqkSCNkFs_Ipgh4W0g4Z8dBoyTvJISN16lf7m-huOnfngVtnnNXmRe52oBp0sTtfxapFHN4y/pubchart?oid=574536670&format=image)](https://docs.google.com/spreadsheets/d/101wE-LjNJL-lSzZB96ifQAj3X-WmmA1ZIXKFTFRFJGY/edit?usp=sharing)
 
+<!--
 # Setting up / Getting started
----
+-->
+
 # Usage
 
-- This is an Xposed Module.
 - For Magisk users use [LSPosed](https://github.com/LSPosed/LSPosed).
 - For Non-Root users use [LSPatch](https://github.com/LSPosed/LSPatch).
 
@@ -61,17 +70,11 @@ You can download the latest build from the GitHub Actions artifacts.
 3. Click on the workflow run to view details.
 4. In the "Artifacts" section at the bottom of the page, download the `GakumasLocalify` artifact.
 
-# Localization
+# Localization Data
 
 [Gakumas-Translation-Data-EN](https://github.com/NatsumeLS/Gakumas-Translation-Data-EN)
 
 - Localization files are placed in `/app/src/main/assets/gakumas-local`
-
-# Contributors
-
-<a href="https://github.com/NatsumeLS/Gakumas-Localify-EN/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=NatsumeLS/Gakumas-Localify-EN" />
-</a>
 
 # Special Thanks
 
@@ -80,6 +83,3 @@ You can download the latest build from the GitHub Actions artifacts.
 - [gkmasToolkit](https://github.com/kishidanatsumi/gkmasToolkit)
 - [UmaPyogin-Android](https://github.com/akemimadoka/UmaPyogin-Android)
 - [UnityResolve.hpp](https://github.com/issuimo/UnityResolve.hpp)
-
-[gakuen-imas-localify]: https://github.com/chinosk6/gakuen-imas-localify/
-[Android]: https://play.google.com/store/apps/details?id=com.bandainamcoent.idolmaster_gakuen
