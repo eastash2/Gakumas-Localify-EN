@@ -14,7 +14,7 @@ jobs:
     - name: set up android development environment
       uses: android-actions/setup-android@v2
 
-    - name: install dependencies
+    - name: Install Dependencies
       run: |
         sdkmanager --install "cmake;3.22.1"
         echo "cmake.dir=/usr/local/lib/android/sdk/cmake/3.22.1" > local.properties
@@ -25,25 +25,20 @@ jobs:
         distribution: 'temurin'
         java-version: '21'
 
-    - name: Write branch and commit info
+    - name: Write Branch and Commit info
       run: |
         branch=$(git rev-parse --abbrev-ref HEAD)
         hash=$(git rev-parse --short=7 HEAD)
         echo "$branch.$hash" > app/src/main/assets/gakumas-local/version.txt
               
-    - name: Grant execute permission for gradlew
+    - name: Grant execute permission for Gradlew
       run: chmod +x gradlew
 
     - name: Build with Gradle
       run: ./gradlew build
 
-    - uses: actions/upload-artifact@v4
-      with:
-        name: GakumasLocalify-Unsigned-apk
-        path: app/build/outputs/apk/debug/app-debug.apk
-
     - uses: ilharp/sign-android-release@v1
-      name: Sign app APK
+      name: Sign App APK
       id: sign_app
       with:
         releaseDir: app/build/outputs/apk/debug
@@ -55,5 +50,5 @@ jobs:
 
     - uses: actions/upload-artifact@v4
       with:
-        name: GakumasLocalify-Signed-apk
+        name: GakumasLocalify-EN
         path: ${{steps.sign_app.outputs.signedFile}}
