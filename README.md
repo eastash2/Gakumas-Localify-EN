@@ -38,7 +38,7 @@ However, these modifications do violate the relevant Terms of Service, so **proc
 
 [![](https://img.shields.io/endpoint?url=https://gakumas-localify-en.vercel.app/api/getLatestCommit&style=flat-square)](https://github.com/NatsumeLS/Gakumas-Localify-EN/commits)
 
-[Latest Build](https://nightly.link/NatsumeLS/Gakumas-Localify-EN/workflows/build/main/GakumasLocalify-EN.zip)
+[Download Latest Build](https://nightly.link/NatsumeLS/Gakumas-Localify-EN/workflows/build/main/GakumasLocalify-EN.zip)
 
 <div align="center">
 
@@ -64,9 +64,9 @@ However, these modifications do violate the relevant Terms of Service, so **proc
 
 `LSPatch` is an alternative to `LSPosed` and is used for applying patches to your Android system. It does not require root access, which makes it a popular choice for users who do not want to root their devices.
 
-`LSPosed` instructions won't be provided here since it is unique for each devices.
+Instructions for `LSPosed` won't be provided here since it is unique for each devices.
 
-## Instructions for Installing `LSPatch` on a Device Using `Shizuku`
+# Instructions for Installing `LSPatch` on a Device Using `Shizuku`
 
 ## Step 1: Install Shizuku
    - Install `Shizuku` from [Google Play Store](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api).
@@ -86,14 +86,20 @@ However, these modifications do violate the relevant Terms of Service, so **proc
    - Open `LSPatch` and navigate to the second tab where you can add apps.
    - Add new patch and select `学マス` then follow the instructions to apply patches.
 
-     **Only use Local Patch Mode**
+     **Only use** `Local Patch Mode`
+
+     **Make sure the Module is enabled in** `LSPatch`
+
+<div align="center">
 
 # Translation Progress
 
-[Detailed Translation Progress](https://docs.google.com/spreadsheets/d/101wE-LjNJL-lSzZB96ifQAj3X-WmmA1ZIXKFTFRFJGY)
+[Detailed Information](https://docs.google.com/spreadsheets/d/101wE-LjNJL-lSzZB96ifQAj3X-WmmA1ZIXKFTFRFJGY)
 
-[![Link](https://docs.google.com/spreadsheets/d/e/2PACX-1vQctXxwDqkSCNkFs_Ipgh4W0g4Z8dBoyTvJISN16lf7m-huOnfngVtnnNXmRe52oBp0sTtfxapFHN4y/pubchart?oid=847311911&format=image)](https://docs.google.com/spreadsheets/d/101wE-LjNJL-lSzZB96ifQAj3X-WmmA1ZIXKFTFRFJGY/edit?usp=sharing)
-[![Link](https://docs.google.com/spreadsheets/d/e/2PACX-1vQctXxwDqkSCNkFs_Ipgh4W0g4Z8dBoyTvJISN16lf7m-huOnfngVtnnNXmRe52oBp0sTtfxapFHN4y/pubchart?oid=574536670&format=image)](https://docs.google.com/spreadsheets/d/101wE-LjNJL-lSzZB96ifQAj3X-WmmA1ZIXKFTFRFJGY/edit?usp=sharing)
+[![Link](https://docs.google.com/spreadsheets/d/e/2PACX-1vQctXxwDqkSCNkFs_Ipgh4W0g4Z8dBoyTvJISN16lf7m-huOnfngVtnnNXmRe52oBp0sTtfxapFHN4y/pubchart?oid=847311911&format=image)](https://docs.google.com/spreadsheets/d/101wE-LjNJL-lSzZB96ifQAj3X-WmmA1ZIXKFTFRFJGY)
+[![Link](https://docs.google.com/spreadsheets/d/e/2PACX-1vQctXxwDqkSCNkFs_Ipgh4W0g4Z8dBoyTvJISN16lf7m-huOnfngVtnnNXmRe52oBp0sTtfxapFHN4y/pubchart?oid=574536670&format=image)](https://docs.google.com/spreadsheets/d/101wE-LjNJL-lSzZB96ifQAj3X-WmmA1ZIXKFTFRFJGY)
+
+</div>
 
 # Localization Data
 
