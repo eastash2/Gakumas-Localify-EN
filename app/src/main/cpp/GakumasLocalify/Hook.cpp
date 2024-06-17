@@ -524,8 +524,8 @@ namespace GakumasLocal::HookMain {
             renderScale = Config::renderScale;
             volumeIndex = Config::volumeIndex;
 
-            Log::ShowToastFmt("ApplySetting\nqualityLevel: %d, maxBufferPixel: %d\nenderScale: %f, volumeIndex: %d\nLODQualityLv: %d, ReflectionLv: %d",
-                              qualitySettingsLevel, maxBufferPixel, renderScale, volumeIndex, Config::lodQualityLevel, Config::reflectionQualityLevel);
+            Log::ShowToastFmt("Graphic Settings Applied\nQuality Level: %d, Render Scale: %f",
+                              qualitySettingsLevel , renderScale);
         }
 
         CampusQualityManager_ApplySetting_Orig(_this, qualitySettingsLevel, maxBufferPixel, renderScale, volumeIndex);

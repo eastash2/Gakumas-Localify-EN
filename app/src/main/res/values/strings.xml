@@ -9,7 +9,7 @@
     <string name="liveUseCustomeDress">Live Custom Character</string>
     <string name="live_costume_head_id">Live Custom Head ID (eg. costume_head_hski-cstm-0002)</string>
     <string name="live_custome_dress_id">Live Custom Dress ID (eg. hski-cstm-0002)</string>
-    <string name="useCustomeGraphicSettings">Use Custom Graphics Settings</string>
+    <string name="useCustomeGraphicSettings">Use Custom Graphic Settings</string>
     <string name="renderscale">Render Scale (0.5-1.0)</string>
     <string name="text_hook_test_mode">Text Hook Test Mode (For Testing Only)</string>
     <string name="export_text">Export Text (For Collecting Strings)</string>
