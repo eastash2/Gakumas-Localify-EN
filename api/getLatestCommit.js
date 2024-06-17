@@ -2,7 +2,7 @@
 
 import fetch from 'node-fetch';
 
-export default async (res) => {
+export default async (req, res) => {
   const username = 'NatsumeLS';
   const repo = 'Gakumas-Localify-EN';
 
