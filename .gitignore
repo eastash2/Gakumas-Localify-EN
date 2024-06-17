@@ -1,6 +1,5 @@
 /.gradle
 /.idea
-/.vercel
 /app/.cxx
 /app/build
 /app/debug
