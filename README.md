@@ -10,7 +10,7 @@ A Xposed Module for Localizing *Gakuen iDOLM@STER* to English.
 
 It works by hooking into the game's text rendering system and replacing text during runtime.
 
-This project includes a modified version of [gakuen-imas-localify](https://github.com/chinosk6/gakuen-imas-localify).
+This project includes a modified version of [gakuen-imas-localify](https://github.com/chinosk6/gakuen-imas-localify)
 
 It is compatible only with the *Android* version of the game.
 
@@ -59,8 +59,8 @@ However, these modifications do violate the relevant Terms of Service, so **proc
 
 # Getting started
 
-- For Root users use [LSPosed](https://github.com/LSPosed/LSPosed).
-- For Non-Root users use [LSPatch](https://github.com/LSPosed/LSPatch).
+- For Root users use [LSPosed](https://github.com/LSPosed/LSPosed)
+- For Non-Root users use [LSPatch](https://github.com/LSPosed/LSPatch)
 
 `LSPatch` is an alternative to `LSPosed` and is used for applying patches to your Android system. It does not require root access, which makes it a popular choice for users who do not want to root their devices.
 
@@ -78,8 +78,9 @@ Instructions for `LSPosed` won't be provided here since it is unique for each de
 
 ## Step 3: Configure LSPatch with Shizuku
    - Open `Shizuku` and ensure the service is running.
-   - Open `LSPatch`.
-   - You should see a prompt to grant `Shizuku` permissions. Follow the on-screen instructions to grant the necessary permissions.
+   - Open `LSPatch`
+   - You should see a prompt to grant `Shizuku` permissions.
+   - Follow the on-screen instructions to grant the necessary permissions.
 
 ## Step 4: Use LSPatch
    - Install `Gakumas-Localify-EN`
