@@ -1,5 +1,6 @@
-[![](https://github.com/NatsumeLS/Gakumas-Localify-EN/actions/workflows/build.yml/badge.svg)](https://github.com/NatsumeLS/Gakumas-Localify-EN/actions/workflows/build.yml)
-[![](https://hits.dwyl.com/NatsumeLS/Gakumas-Localify-EN.svg?style=flat-square)](https://github.com/NatsumeLS/Gakumas-Localify-EN/graphs/traffic)
+[![](https://img.shields.io/endpoint?url=https://hits.dwyl.com/NatsumeLS/Gakumas-Localify-EN.json?color=pink&style=flat-square&label=Views)](https://github.com/NatsumeLS/Gakumas-Localify-EN/graphs/traffic)
+[![](https://img.shields.io/github/actions/workflow/status/NatsumeLS/Gakumas-Localify-EN/build.yml?style=flat-square&label=Build)](https://github.com/NatsumeLS/Gakumas-Localify-EN/actions/workflows/build.yml)
+[![](https://img.shields.io/endpoint?url=https://gakumas-localify-en.vercel.app/api/getLatestCommit&style=flat-square)](https://github.com/NatsumeLS/Gakumas-Localify-EN/commits)
 
 [![](https://dcbadge.limes.pink/api/server/https://discord.gg/qARc4Hdc3n)](https://natsume.io/GakumasLocalize)
 
@@ -45,21 +46,11 @@ However, these modifications do violate the relevant Terms of Service, so **proc
 
 **Neither the maintainers nor the contributors will be responsible for any issues that may arise from using this project.**
 
-# Translation Progress
-
-[Detailed Translation Progress](https://docs.google.com/spreadsheets/d/101wE-LjNJL-lSzZB96ifQAj3X-WmmA1ZIXKFTFRFJGY)
-
-[![Link](https://docs.google.com/spreadsheets/d/e/2PACX-1vQctXxwDqkSCNkFs_Ipgh4W0g4Z8dBoyTvJISN16lf7m-huOnfngVtnnNXmRe52oBp0sTtfxapFHN4y/pubchart?oid=847311911&format=image)](https://docs.google.com/spreadsheets/d/101wE-LjNJL-lSzZB96ifQAj3X-WmmA1ZIXKFTFRFJGY/edit?usp=sharing)
-[![Link](https://docs.google.com/spreadsheets/d/e/2PACX-1vQctXxwDqkSCNkFs_Ipgh4W0g4Z8dBoyTvJISN16lf7m-huOnfngVtnnNXmRe52oBp0sTtfxapFHN4y/pubchart?oid=574536670&format=image)](https://docs.google.com/spreadsheets/d/101wE-LjNJL-lSzZB96ifQAj3X-WmmA1ZIXKFTFRFJGY/edit?usp=sharing)
-
 # Download
 
-You can download the latest apk build from the GitHub Actions artifacts.
+[![](https://img.shields.io/endpoint?url=https://gakumas-localify-en.vercel.app/api/getLatestCommit&style=flat-square)](https://github.com/NatsumeLS/Gakumas-Localify-EN/commits)
 
-1. Go to the [GitHub Actions](https://github.com/NatsumeLS/Gakumas-Localify-EN/actions/workflows/build.yml) page.
-2. Find the most recent workflow run.
-3. Click on the workflow run to view details.
-4. In the `Artifacts` section at the bottom of the page, download the `GakumasLocalify-Signed-apk` artifact.
+[Latest Build](https://nightly.link/NatsumeLS/Gakumas-Localify-EN/workflows/build/main/GakumasLocalify-Signed-apk.zip)
 
 # Getting started
 
@@ -91,6 +82,13 @@ You can download the latest apk build from the GitHub Actions artifacts.
    - Add new patch and select `学マス` then follow the instructions to apply patches.
 
      **Only use Local Patch Mode**
+
+# Translation Progress
+
+[Detailed Translation Progress](https://docs.google.com/spreadsheets/d/101wE-LjNJL-lSzZB96ifQAj3X-WmmA1ZIXKFTFRFJGY)
+
+[![Link](https://docs.google.com/spreadsheets/d/e/2PACX-1vQctXxwDqkSCNkFs_Ipgh4W0g4Z8dBoyTvJISN16lf7m-huOnfngVtnnNXmRe52oBp0sTtfxapFHN4y/pubchart?oid=847311911&format=image)](https://docs.google.com/spreadsheets/d/101wE-LjNJL-lSzZB96ifQAj3X-WmmA1ZIXKFTFRFJGY/edit?usp=sharing)
+[![Link](https://docs.google.com/spreadsheets/d/e/2PACX-1vQctXxwDqkSCNkFs_Ipgh4W0g4Z8dBoyTvJISN16lf7m-huOnfngVtnnNXmRe52oBp0sTtfxapFHN4y/pubchart?oid=574536670&format=image)](https://docs.google.com/spreadsheets/d/101wE-LjNJL-lSzZB96ifQAj3X-WmmA1ZIXKFTFRFJGY/edit?usp=sharing)
 
 # Localization Data
 
