@@ -1,7 +1,0 @@
-{
-  "name": "get-latest-commit",
-  "main": "main.js",
-  "dependencies": {
-    "node-fetch": "^3.3.2"
-  }
-}
