@@ -66,7 +66,7 @@ However, these modifications do violate the relevant Terms of Service, so **proc
 
 Instructions for `LSPosed` won't be provided here since it is unique for each devices.
 
-# Instructions for Installing `LSPatch` on a Device Using `Shizuku`
+# Instructions for Installing `LSPatch` using `Shizuku`
 
 ## Step 1: Install Shizuku
    - Install `Shizuku` from [Google Play Store](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api).
