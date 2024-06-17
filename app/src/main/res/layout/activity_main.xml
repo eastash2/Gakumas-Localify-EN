@@ -26,6 +26,7 @@
                 android:id="@+id/scrollView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:scrollbars="none"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -45,14 +46,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/gakumas_localify"
-                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
                         android:id="@+id/textViewResVersion"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/black" />
+                        android:layout_height="wrap_content" />
 
                     <Space
                         android:layout_width="match_parent"
@@ -123,7 +122,7 @@
 
                             <com.google.android.material.textfield.TextInputLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="48dp"
+                                android:layout_height="60dp"
                                 android:background="@android:color/transparent"
                                 android:hint="@string/setFpsTitle"
                                 app:boxBackgroundColor="@android:color/transparent">
@@ -131,7 +130,7 @@
                                 <com.google.android.material.textfield.TextInputEditText
                                     android:id="@+id/editTextTargetFps"
                                     android:layout_width="match_parent"
-                                    android:layout_height="48dp"
+                                    android:layout_height="match_parent"
                                     android:ems="10"
                                     android:inputType="numberSigned"
                                     android:onTextChanged="@{(s, st, b, a) -> listener.onTargetFpsChanged(s, st, b, a)}"
@@ -269,8 +268,7 @@
                                 <com.google.android.material.textview.MaterialTextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/orientation_lock"
-                                    android:textColor="@color/material_dynamic_neutral0"/>
+                                    android:text="@string/orientation_lock" />
 
                                 <RadioGroup
                                     android:layout_width="match_parent"
@@ -359,7 +357,8 @@
                                             android:layout_weight="1"
                                             android:minWidth="1sp"
                                             android:onClick="@{() -> listener.onChangePresetQuality(4)}"
-                                            android:text="@string/max_high" />
+                                            android:text="@string/max_high"
+                                            android:textSize="12sp" />
 
                                         <com.google.android.material.button.MaterialButton
                                             android:id="@+id/qualityVeryHighButton"
@@ -369,7 +368,8 @@
                                             android:layout_weight="1"
                                             android:minWidth="1sp"
                                             android:onClick="@{() -> listener.onChangePresetQuality(3)}"
-                                            android:text="@string/very_high" />
+                                            android:text="@string/very_high"
+                                            android:textSize="12sp" />
 
                                         <com.google.android.material.button.MaterialButton
                                             android:id="@+id/qualityHighButton"
@@ -379,7 +379,8 @@
                                             android:layout_weight="1"
                                             android:minWidth="1sp"
                                             android:onClick="@{() -> listener.onChangePresetQuality(2)}"
-                                            android:text="@string/hign" />
+                                            android:text="@string/hign"
+                                            android:textSize="12sp" />
 
                                         <com.google.android.material.button.MaterialButton
                                             android:id="@+id/qualityMidButton"
@@ -389,7 +390,8 @@
                                             android:layout_weight="1"
                                             android:minWidth="1sp"
                                             android:onClick="@{() -> listener.onChangePresetQuality(1)}"
-                                            android:text="@string/middle" />
+                                            android:text="@string/middle"
+                                            android:textSize="12sp" />
 
                                         <com.google.android.material.button.MaterialButton
                                             android:id="@+id/qualityLowButton"
@@ -398,7 +400,8 @@
                                             android:layout_weight="1"
                                             android:minWidth="1sp"
                                             android:onClick="@{() -> listener.onChangePresetQuality(0)}"
-                                            android:text="@string/low" />
+                                            android:text="@string/low"
+                                            android:textSize="12sp" />
 
                                     </LinearLayout>
 
@@ -422,6 +425,7 @@
                                                 android:id="@+id/editTextRenderScaleLayout"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="48dp"
+                                                android:layout_marginRight="6dp"
                                                 android:layout_weight="1"
                                                 android:background="@android:color/transparent"
                                                 android:hint="@string/renderscale"
@@ -448,7 +452,7 @@
                                                 android:layout_height="48dp"
                                                 android:layout_weight="1"
                                                 android:background="@android:color/transparent"
-                                                android:hint="QualityLevel (1/1/2/3/5)"
+                                                android:hint="Quality Level (1-5)"
                                                 app:boxBackgroundColor="@android:color/transparent">
 
                                                 <com.google.android.material.textfield.TextInputEditText
@@ -456,7 +460,7 @@
                                                     android:layout_width="match_parent"
                                                     android:layout_height="match_parent"
                                                     android:ems="10"
-                                                    android:hint="1/1/2/3/5"
+                                                    android:hint="1/2/3/4/5"
                                                     android:inputType="number"
                                                     android:onTextChanged="@{(s, st, b, a) -> listener.onQualitySettingsLevelChanged(s, st, b, a)}"
                                                     android:paddingStart="0dp"
@@ -478,9 +482,10 @@
                                                 android:id="@+id/editTextVolumeIndexLayout"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="48dp"
+                                                android:layout_marginRight="6dp"
                                                 android:layout_weight="1"
                                                 android:background="@android:color/transparent"
-                                                android:hint="VolumeIndex (0/1/2/3/4)"
+                                                android:hint="Volume Index (0-4)"
                                                 app:boxBackgroundColor="@android:color/transparent">
 
                                                 <com.google.android.material.textfield.TextInputEditText
@@ -504,7 +509,7 @@
                                                 android:layout_height="48dp"
                                                 android:layout_weight="1"
                                                 android:background="@android:color/transparent"
-                                                android:hint="MaxBufferPixel (1024/1440/2538/3384/8190)"
+                                                android:hint="Max Buffer Pixel (1024-8190)"
                                                 app:boxBackgroundColor="@android:color/transparent">
 
                                                 <com.google.android.material.textfield.TextInputEditText
@@ -534,9 +539,10 @@
                                                 android:id="@+id/editTextReflectionQualityLevelLayout"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="48dp"
+                                                android:layout_marginRight="6dp"
                                                 android:layout_weight="1"
                                                 android:background="@android:color/transparent"
-                                                android:hint="ReflectionLevel (0~5)"
+                                                android:hint="Reflection Level (1-5)"
                                                 app:boxBackgroundColor="@android:color/transparent">
 
                                                 <com.google.android.material.textfield.TextInputEditText
@@ -544,7 +550,7 @@
                                                     android:layout_width="match_parent"
                                                     android:layout_height="match_parent"
                                                     android:ems="10"
-                                                    android:hint="0/1/2/3/4/5"
+                                                    android:hint="1/2/3/4/5"
                                                     android:inputType="number"
                                                     android:onTextChanged="@{(s, st, b, a) -> listener.onReflectionQualityLevelChanged(s, st, b, a)}"
                                                     android:paddingStart="0dp"
@@ -560,7 +566,7 @@
                                                 android:layout_height="48dp"
                                                 android:layout_weight="1"
                                                 android:background="@android:color/transparent"
-                                                android:hint="LOD Level (0~5)"
+                                                android:hint="LOD Level (1-5)"
                                                 app:boxBackgroundColor="@android:color/transparent">
 
                                                 <com.google.android.material.textfield.TextInputEditText
@@ -568,7 +574,7 @@
                                                     android:layout_width="match_parent"
                                                     android:layout_height="match_parent"
                                                     android:ems="10"
-                                                    android:hint="0/1/2/3/4/5"
+                                                    android:hint="1/2/3/4/5"
                                                     android:inputType="number"
                                                     android:onTextChanged="@{(s, st, b, a) -> listener.onLodQualityLevelChanged(s, st, b, a)}"
                                                     android:paddingStart="0dp"
@@ -704,6 +710,7 @@
                                             <com.google.android.material.textfield.TextInputLayout
                                                 android:layout_width="match_parent"
                                                 android:layout_height="48dp"
+                                                android:layout_marginRight="6dp"
                                                 android:layout_weight="1"
                                                 android:background="@android:color/transparent"
                                                 android:hint="@string/damping"
@@ -754,6 +761,7 @@
                                             <com.google.android.material.textfield.TextInputLayout
                                                 android:layout_width="match_parent"
                                                 android:layout_height="48dp"
+                                                android:layout_marginRight="6dp"
                                                 android:layout_weight="1"
                                                 android:background="@android:color/transparent"
                                                 android:hint="@string/spring"
@@ -804,6 +812,7 @@
                                             <com.google.android.material.textfield.TextInputLayout
                                                 android:layout_width="match_parent"
                                                 android:layout_height="48dp"
+                                                android:layout_marginRight="6dp"
                                                 android:layout_weight="1"
                                                 android:background="@android:color/transparent"
                                                 android:hint="@string/pendulumrange"

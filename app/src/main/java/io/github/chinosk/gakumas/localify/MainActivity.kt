@@ -100,7 +100,7 @@ class MainActivity : AppCompatActivity(), ConfigUpdateListener {
             configFile.readText()
         }
         else {
-            showToast("检测到第一次启动，初始化配置文件...")
+            showToast("Initializing configuration file...")
             "{}"
         }
     }
@@ -122,8 +122,7 @@ class MainActivity : AppCompatActivity(), ConfigUpdateListener {
 
             val packInfo = packageManager.getPackageInfo(packageName, 0)
             val version = packInfo.versionName
-            val versionCode = packInfo.longVersionCode
-            titleLabel.text = "${titleLabel.text} $version ($versionCode)"
+            titleLabel.text = "${titleLabel.text} $version"
         }
         catch (_: Exception) {}
         versionLabel.text = "Assets Version: $versionText"
@@ -135,7 +134,7 @@ class MainActivity : AppCompatActivity(), ConfigUpdateListener {
             Gson().fromJson(configStr, GakumasConfig::class.java)
         }
         catch (e: JsonSyntaxException) {
-            showToast("配置文件异常，已重置: $e")
+            showToast("Configuration file has been reset: $e")
             Gson().fromJson("{}", GakumasConfig::class.java)
         }
         saveConfig()
@@ -158,7 +157,7 @@ class MainActivity : AppCompatActivity(), ConfigUpdateListener {
                 binding.config!!.dbgMode = !origDbg
                 checkConfigAndUpdateView()
                 saveConfig()
-                showToast("TestMode: ${!origDbg}")
+                showToast("Test Mode: ${!origDbg}")
             }
         }
         return if (event.action == 1145) true else super.dispatchKeyEvent(event)

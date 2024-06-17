@@ -107,10 +107,10 @@ class GakumasHookMain : IXposedHookLoadPackage, IXposedHookZygoteInit {
 
                     val app = AndroidAppHelper.currentApplication()
                     if (nativeLibLoadSuccess) {
-                        showToast("lib$nativeLibName.so loaded.")
+                        showToast("Loaded lib$nativeLibName.so")
                     }
                     else {
-                        showToast("Load native library lib$nativeLibName.so failed.")
+                        showToast("lib$nativeLibName.so failed to load")
                         return
                     }
 
