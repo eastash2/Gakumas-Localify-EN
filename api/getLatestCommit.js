@@ -1,8 +1,8 @@
 // api/getLatestCommit.js
 
-const fetch = require('node-fetch');
+import fetch from 'node-fetch';
 
-module.exports = async (req, res) => {
+export default async (res) => {
   const username = 'NatsumeLS';
   const repo = 'Gakumas-Localify-EN';
 
