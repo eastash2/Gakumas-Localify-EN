@@ -4,7 +4,7 @@
 
 [![](https://dcbadge.limes.pink/api/server/https://discord.gg/qARc4Hdc3n)](https://natsume.io/GakumasLocalize)
 
-<img align="center" src=/Images/logo.png>
+<img align="center" src=/docs/logo.png>
 
 A Xposed Module for Localizing *Gakuen iDOLM@STER* to English.
 
@@ -13,18 +13,6 @@ It works by hooking into the game's text rendering system and replacing text dur
 This project includes a modified version of [gakuen-imas-localify](https://github.com/chinosk6/gakuen-imas-localify).
 
 It is compatible only with the *Android* version of the game.
-
-<!--
-# Previews
-
-<img align="center" src=/Images/preview.png>
-
-<div align="center">
-
-# Video Preview
-
-</div>
--->
 
 # Features
 
@@ -51,6 +39,23 @@ However, these modifications do violate the relevant Terms of Service, so **proc
 [![](https://img.shields.io/endpoint?url=https://gakumas-localify-en.vercel.app/api/getLatestCommit&style=flat-square)](https://github.com/NatsumeLS/Gakumas-Localify-EN/commits)
 
 [Latest Build](https://nightly.link/NatsumeLS/Gakumas-Localify-EN/workflows/build/main/GakumasLocalify-EN.zip)
+
+<div align="center">
+
+# Preview
+
+<img src=/docs/preview.png>
+
+</div>
+
+<!--
+
+<div align="center">
+
+# Video Preview
+
+</div>
+-->
 
 # Getting started
 
