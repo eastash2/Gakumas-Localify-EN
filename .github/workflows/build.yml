@@ -25,11 +25,13 @@ jobs:
         distribution: 'temurin'
         java-version: '21'
 
-    - name: Write Branch and Commit info
+    - name: Write Branch and Hash info
       run: |
         branch=$(git rev-parse --abbrev-ref HEAD)
         hash=$(git rev-parse --short=7 HEAD)
         echo "$branch.$hash" > app/src/main/assets/gakumas-local/version.txt
+        echo "BRANCH=$branch" >> $GITHUB_ENV
+        echo "HASH=$hash" >> $GITHUB_ENV
               
     - name: Grant execute permission for Gradlew
       run: chmod +x gradlew
@@ -48,7 +50,12 @@ jobs:
         keyPassword: ${{ secrets.ANDROID_KEY_PASSWORD }}
         buildToolsVersion: 33.0.0
 
+    - name: Rename signed APK
+      run: |
+        echo "SIGNED_APK=app/build/outputs/apk/debug/Gakumas-Localify-EN_${{env.BRANCH}}.${{env.HASH}}.apk" >> $GITHUB_ENV
+        mv ${{steps.sign_app.outputs.signedFile}} ${{env.SIGNED_APK}}
+
     - uses: actions/upload-artifact@v4
       with:
-        name: GakumasLocalify-EN
-        path: ${{steps.sign_app.outputs.signedFile}}
+        name: Gakumas-Localify-EN
+        path: ${{ env.SIGNED_APK }}
