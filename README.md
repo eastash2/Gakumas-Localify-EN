@@ -38,7 +38,7 @@ However, these modifications do violate the relevant Terms of Service, so **proc
 
 [![](https://img.shields.io/endpoint?url=https://gakumas-localify-en.vercel.app/api/getLatestCommit&style=flat-square)](https://github.com/NatsumeLS/Gakumas-Localify-EN/commits)
 
-[Download Latest Build](https://nightly.link/NatsumeLS/Gakumas-Localify-EN/workflows/build/main/GakumasLocalify-EN.zip)
+[Download Latest Build](https://nightly.link/NatsumeLS/Gakumas-Localify-EN/workflows/build/main/Gakumas-Localify-EN.zip)
 
 <div align="center">
 
