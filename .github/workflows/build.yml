@@ -81,7 +81,6 @@ jobs:
         webhook: ${{ secrets.DISCORD_WEBHOOK }}
         status: ${{ job.status }}
         title: "Android CI"
-        url: "https://github.com/NatsumeLS/Gakumas-Localify-EN/actions/workflows/build.yml"
 
     - name: Send New Build Notification to Discord
       uses: sarisia/actions-status-discord@v1
