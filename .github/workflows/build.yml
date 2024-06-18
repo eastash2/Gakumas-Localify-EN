@@ -42,6 +42,7 @@ jobs:
         branch=$(git rev-parse --abbrev-ref HEAD)
         hash=$(git rev-parse --short=7 HEAD)
         echo "$branch.$hash" > app/src/main/assets/gakumas-local/version.txt
+        echo "VERSION=$branch.$hash" >> $GITHUB_ENV
               
     - name: Grant Execute Permission for Gradlew
       run: chmod +x gradlew
@@ -72,3 +73,24 @@ jobs:
       with:
         name: Gakumas-Localify-EN
         path: ${{ env.SIGNED_APK }}
+
+    - name: Send Notification to Discord
+      uses: sarisia/actions-status-discord@v1
+      if: always()
+      with:
+        webhook: ${{ secrets.DISCORD_WEBHOOK }}
+        status: ${{ job.status }}
+        title: "Android CI"
+        url: "https://github.com/NatsumeLS/Gakumas-Localify-EN/actions/workflows/build.yml"
+
+    - name: Send New Build Notification to Discord
+      uses: sarisia/actions-status-discord@v1
+      if: success()
+      with:
+        webhook: ${{ secrets.DISCORD_WEBHOOK }}
+        nodetail: true
+        title: New Build
+        color: 0x00ff00
+        description: |
+          Version: `${{ secrets.VERSION }}`
+          [Download](https://nightly.link/NatsumeLS/Gakumas-Localify-EN/workflows/build/main/Gakumas-Localify-EN.zip)
