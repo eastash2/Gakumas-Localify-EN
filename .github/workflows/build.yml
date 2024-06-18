@@ -11,7 +11,7 @@ jobs:
     - uses: actions/checkout@v3
       with:
         submodules: recursive
-    - name: set up android development environment
+    - name: Setup Android Development Environment
       uses: android-actions/setup-android@v2
 
     - name: Install Dependencies
@@ -25,13 +25,13 @@ jobs:
         distribution: 'temurin'
         java-version: '21'
 
-    - name: Write Branch and Hash info
+    - name: Write Branch and Hash Info
       run: |
         branch=$(git rev-parse --abbrev-ref HEAD)
         hash=$(git rev-parse --short=7 HEAD)
         echo "$branch.$hash" > app/src/main/assets/gakumas-local/version.txt
               
-    - name: Grant execute permission for Gradlew
+    - name: Grant Execute Permission for Gradlew
       run: chmod +x gradlew
 
     - name: Build with Gradle
@@ -48,7 +48,7 @@ jobs:
         keyPassword: ${{ secrets.ANDROID_KEY_PASSWORD }}
         buildToolsVersion: 33.0.0
 
-    - name: Rename signed APK
+    - name: Rename Signed APK
       run: |
         branch=$(git rev-parse --abbrev-ref HEAD)
         hash=$(git rev-parse --short=7 HEAD)
