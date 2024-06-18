@@ -14,7 +14,7 @@
     <string name="text_hook_test_mode">Text Hook Test Mode (For Testing Only)</string>
     <string name="export_text">Export Text (For Collecting Strings)</string>
     <string name="force_export_resource">Force Update Resource</string>
-    <string name="max_high">Ultra</string>
+    <string name="max_high">Max</string>
     <string name="very_high">Very High</string>
     <string name="hign">High</string>
     <string name="middle">Med</string>
