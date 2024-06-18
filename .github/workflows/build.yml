@@ -9,15 +9,15 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         submodules: recursive
 
     - name: Setup Android Development Environment
-      uses: android-actions/setup-android@v2
+      uses: android-actions/setup-android@v3
 
     - name: Cache Gradle
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: |
           ~/.gradle/caches
@@ -32,7 +32,7 @@ jobs:
         echo "cmake.dir=/usr/local/lib/android/sdk/cmake/3.22.1" > local.properties
 
     - name: Setup Java JDK
-      uses: actions/setup-java@v4.2.1
+      uses: actions/setup-java@v4
       with:
         distribution: 'temurin'
         java-version: '21'
