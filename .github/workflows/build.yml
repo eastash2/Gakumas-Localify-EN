@@ -92,5 +92,5 @@ jobs:
         title: New Build
         color: 0x00ff00
         description: |
-          Version: `${{ secrets.VERSION }}`
+          Version: `${{ env.VERSION }}`
           [Download](https://nightly.link/NatsumeLS/Gakumas-Localify-EN/workflows/build/main/Gakumas-Localify-EN.zip)
