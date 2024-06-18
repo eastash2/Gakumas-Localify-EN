@@ -26,15 +26,6 @@ jobs:
         restore-keys: |
           gradle-${{ runner.os }}-
 
-    - name: Cache CMake
-      uses: actions/cache@v3
-      with:
-        path: |
-          /usr/local/lib/android/sdk/cmake/3.22.1
-        key: cmake-${{ runner.os }}-3.22.1
-        restore-keys: |
-          cmake-${{ runner.os }}-
-
     - name: Install Dependencies
       run: |
         sdkmanager --install "cmake;3.22.1"
@@ -58,8 +49,8 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
 
-    - uses: ilharp/sign-android-release@v1
-      name: Sign App APK
+    - name: Sign APK
+      uses: ilharp/sign-android-release@v1
       id: sign_app
       with:
         releaseDir: app/build/outputs/apk/debug
@@ -76,7 +67,8 @@ jobs:
         mv ${{steps.sign_app.outputs.signedFile}} app/build/outputs/apk/debug/Gakumas-Localify-EN_$branch.$hash.apk
         echo "SIGNED_APK=app/build/outputs/apk/debug/Gakumas-Localify-EN_$branch.$hash.apk" >> $GITHUB_ENV
 
-    - uses: actions/upload-artifact@v4
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v4
       with:
         name: Gakumas-Localify-EN
         path: ${{ env.SIGNED_APK }}
