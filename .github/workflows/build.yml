@@ -13,6 +13,12 @@ jobs:
       with:
         submodules: recursive
 
+    - name: Setup JDK
+      uses: actions/setup-java@v4
+      with:
+        java-version: '21'
+        distribution: 'temurin'
+
     - name: Setup Android Development Environment
       uses: android-actions/setup-android@v3
 
@@ -30,12 +36,6 @@ jobs:
       run: |
         sdkmanager --install "cmake;3.22.1"
         echo "cmake.dir=/usr/local/lib/android/sdk/cmake/3.22.1" > local.properties
-
-    - name: Setup Java JDK
-      uses: actions/setup-java@v4
-      with:
-        distribution: 'temurin'
-        java-version: '21'
 
     - name: Write Branch and Hash Info
       run: |
