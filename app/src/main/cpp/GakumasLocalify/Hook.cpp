@@ -315,7 +315,7 @@ namespace GakumasLocal::HookMain {
         const auto newFont = Font_klass->New<void*>();
         Font_ctor->Invoke<void>(newFont);
 
-        static std::string fontName = Local::GetBasePath() / "local-files" / "IBMPlexSansKR-SemiBold.ttf";
+        static std::string fontName = Local::GetBasePath() / "local-files" / "IBMPlexSansJP_KR-SemiBold.ttf";
         CreateFontFromPath(newFont, Il2cppString::New(fontName));
         fontCache = newFont;
         return newFont;
