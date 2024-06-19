@@ -73,23 +73,3 @@ jobs:
       with:
         name: Gakumas-Localify-EN
         path: ${{ env.SIGNED_APK }}
-
-    - name: Send Notification to Discord
-      uses: sarisia/actions-status-discord@v1
-      if: always()
-      with:
-        webhook: ${{ secrets.DISCORD_WEBHOOK }}
-        status: ${{ job.status }}
-        title: "Android CI"
-
-    - name: Send New Build Notification to Discord
-      uses: sarisia/actions-status-discord@v1
-      if: success()
-      with:
-        webhook: ${{ secrets.DISCORD_WEBHOOK }}
-        nodetail: true
-        title: New Build
-        color: 0xffd1dc
-        description: |
-          Version: `${{ env.VERSION }}`
-          [Download](https://nightly.link/NatsumeLS/Gakumas-Localify-EN/workflows/build/main/Gakumas-Localify-EN.zip)
