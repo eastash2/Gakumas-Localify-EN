@@ -297,6 +297,30 @@ namespace GakumasLocal::HookMain {
         }
     }
 
+    void* fontCache = nullptr;
+    void* GetReplaceFont() {
+        static auto CreateFontFromPath = reinterpret_cast<void (*)(void* self, Il2cppString* path)>(
+                Il2cppUtils::il2cpp_resolve_icall("UnityEngine.Font::Internal_CreateFontFromPath(UnityEngine.Font,System.String)")
+        );
+        static auto Font_klass = Il2cppUtils::GetClass("UnityEngine.TextRenderingModule.dll",
+                                                       "UnityEngine", "Font");
+        static auto Font_ctor = Il2cppUtils::GetMethod("UnityEngine.TextRenderingModule.dll",
+                                                       "UnityEngine", "Font", ".ctor");
+        if (fontCache) {
+            if (IsNativeObjectAlive(fontCache)) {
+                return fontCache;
+            }
+        }
+
+        const auto newFont = Font_klass->New<void*>();
+        Font_ctor->Invoke<void>(newFont);
+
+        static std::string fontName = Local::GetBasePath() / "local-files" / "IBMPlexSansKR-SemiBold.ttf";
+        CreateFontFromPath(newFont, Il2cppString::New(fontName));
+        fontCache = newFont;
+        return newFont;
+    }
+
     std::unordered_set<void*> updatedFontPtrs{};
     void UpdateFont(void* TMP_Text_this) {
         static auto get_font = Il2cppUtils::GetMethod("Unity.TextMeshPro.dll",
@@ -310,10 +334,13 @@ namespace GakumasLocal::HookMain {
                                                                  "TMP_FontAsset", "UpdateFontAssetData");
 
         auto fontAsset = get_font->Invoke<void*>(TMP_Text_this);
-
-        if (!updatedFontPtrs.contains(fontAsset)) {
-            updatedFontPtrs.emplace(fontAsset);
-            UpdateFontAssetData->Invoke<void>(fontAsset);
+        auto newFont = GetReplaceFont();
+        if (fontAsset && newFont) {
+            set_sourceFontFile->Invoke<void>(fontAsset, newFont);
+            if (!updatedFontPtrs.contains(fontAsset)) {
+                updatedFontPtrs.emplace(fontAsset);
+                UpdateFontAssetData->Invoke<void>(fontAsset);
+            }
         }
         set_font->Invoke<void>(TMP_Text_this, fontAsset);
     }
