@@ -1,13 +1,14 @@
-<img align="center" src=/docs/logo.png>
-
 A Xposed Module for Localizing *Gakuen iDOLM@STER* to Korean.
 Original work [Gakumas-Localify-EN](https://github.com/NatsumeLS/Gakumas-Localify-EN)
 
 It works by hooking into the game's text rendering system and replacing text during runtime.
 
-This project includes a modified version of [gakuen-imas-localify](https://github.com/chinosk6/gakuen-imas-localify)
+[Gakumas-Localify-EN](https://github.com/NatsumeLS/Gakumas-Localify-EN) includes a modified version of [gakuen-imas-localify](https://github.com/chinosk6/gakuen-imas-localify)
 
 It is compatible only with the *Android* version of the game.
+
+Descriptions below is written by [Gakumas-Localify-EN](https://github.com/NatsumeLS/Gakumas-Localify-EN)
+
 
 # Features
 
@@ -78,7 +79,6 @@ Instructions for `LSPosed` won't be provided here since it is unique for each de
 
      **Make sure the Module is enabled in** `LSPatch`
 
-<div align="center">
 
 # Localization Data
 
