@@ -84,7 +84,7 @@
                                 android:id="@+id/textTestMode"
                                 android:layout_width="match_parent"
                                 android:layout_height="48dp"
-                                android:visibility="@{config.dbgMode ? android.view.View.VISIBLE : android.view.View.GONE}"
+                                
                                 android:checked="@={config.textTest}"
                                 android:onCheckedChanged="@{(view, value) -> listener.onTextTestChanged(value)}"
                                 android:text="@string/text_hook_test_mode" />
@@ -98,7 +98,7 @@
                                 android:id="@+id/textExport"
                                 android:layout_width="match_parent"
                                 android:layout_height="48dp"
-                                android:visibility="@{config.dbgMode ? android.view.View.VISIBLE : android.view.View.GONE}"
+                                
                                 android:checked="@={config.dumpText}"
                                 android:onCheckedChanged="@{(view, value) -> listener.onDumpTextChanged(value)}"
                                 android:text="@string/export_text" />
@@ -112,7 +112,7 @@
                                 android:id="@+id/textForceExtract"
                                 android:layout_width="match_parent"
                                 android:layout_height="48dp"
-                                android:visibility="@{config.dbgMode ? android.view.View.VISIBLE : android.view.View.GONE}"
+                                
                                 android:checked="@={config.forceExportResource}"
                                 android:onCheckedChanged="@{(view, value) -> listener.onForceExportResourceChanged(value)}"
                                 android:text="@string/force_export_resource" />
@@ -126,7 +126,7 @@
                             <com.google.android.material.textfield.TextInputLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
-                                android:visibility="@{config.dbgMode ? android.view.View.VISIBLE : android.view.View.GONE}"
+                                
                                 android:background="@android:color/transparent"
                                 android:hint="@string/setFpsTitle"
                                 app:boxBackgroundColor="@android:color/transparent">
@@ -270,12 +270,13 @@
                                 <com.google.android.material.textview.MaterialTextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:visibility="@{config.dbgMode ? android.view.View.VISIBLE : android.view.View.GONE}"
+                                    
                                     android:text="@string/orientation_lock" />
 
                                 <RadioGroup
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    
                                     android:orientation="horizontal"
                                     android:weightSum="3"
                                     android:onCheckedChanged="@{(group, checkedId) -> listener.onGameOrientationChanged(checkedId)}">
@@ -333,7 +334,7 @@
                                         android:id="@+id/SwitchUseCustomeGraphicSettings"
                                         android:layout_width="match_parent"
                                         android:layout_height="48dp"
-                                        android:visibility="@{config.dbgMode ? android.view.View.VISIBLE : android.view.View.GONE}"
+                                        
                                         android:checked="@={config.useCustomeGraphicSettings}"
                                         android:onCheckedChanged="@{(view, value) -> listener.onUseCustomeGraphicSettingsChanged(value)}"
                                         android:text="@string/useCustomeGraphicSettings" />
@@ -342,12 +343,13 @@
 
                                 <TableRow
                                     android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
+                                    android:layout_height="match_parent">                                    
 
                                     <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:orientation="horizontal"
+                                        
                                         app:layout_constraintBottom_toBottomOf="parent"
                                         app:layout_constraintEnd_toEndOf="parent"
                                         app:layout_constraintStart_toStartOf="parent"
@@ -418,6 +420,7 @@
                                     <TableLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="match_parent"
+                                        
                                         android:orientation="vertical">
 
                                         <TableRow
@@ -620,7 +623,7 @@
                                         android:id="@+id/SwitchEnableBreastParam"
                                         android:layout_width="match_parent"
                                         android:layout_height="48dp"
-                                        android:visibility="@{config.dbgMode ? android.view.View.VISIBLE : android.view.View.GONE}"
+                                        
                                         android:checked="@={config.enableBreastParam}"
                                         android:onCheckedChanged="@{(view, value) -> listener.onEnableBreastParamChanged(value)}"
                                         android:text="@string/enable_breast_param" />
