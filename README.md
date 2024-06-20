@@ -8,6 +8,9 @@ It works by hooking into the game's text rendering system and replacing text dur
 It is compatible only with the *Android* version of the game.
 
 Descriptions below is written by [Gakumas-Localify-EN](https://github.com/NatsumeLS/Gakumas-Localify-EN)
+Modification:
+- **KR, JP, EN font support**
+- detach translation data submodule
 
 
 # Features
